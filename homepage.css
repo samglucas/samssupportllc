@@ -11,17 +11,48 @@ header {
   padding: 1em;
 }
 
-/* Navigation Styles */
-nav ul {
-  list-style-type: none;
+/* --- Navigation Bar Styles --- */
+
+/* General Navbar Styles */
+.navbar {
+  background-color: #333;  /* Background */
+  color: rgb(164, 255, 179);             /* Text Color */
+  padding: 15px;            /* Padding */
+  display: flex;            /* Flex Layout */
+  justify-content: space-between; /* Spacing */
+  align-items: center;      /* Vertical Alignment */
 }
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+
+/* --- Logo Styles --- */
+
+/* Logo Text */
+.logo {
+  font-size: 24px;          /* Font Size */
+  font-weight: bold;        /* Bold Text */
 }
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
+
+/* --- Menu Styles --- */
+
+/* Menu List */
+.menu {
+  list-style: none;         /* No Bullets */
+  display: flex;            /* Flex Layout */
+}
+
+/* Menu Items */
+.menu li {
+  margin: 0 15px;           /* Side Margins */
+}
+
+/* Menu Links */
+.menu a {
+  color: white;             /* Text Color */
+  text-decoration: none;    /* No Underline */
+}
+
+/* Hover Effect */
+.menu a:hover {
+  text-decoration: underline; /* Underline on Hover */
 }
 
 /* Main Content */
