@@ -1,0 +1,108 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background: linear-gradient(to right, black, green); /* Gradient from black to green */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Improved line spacing */
+}
+
+header {
+  background: linear-gradient(to right, black, green); /* Gradient from black to green */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-content {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px; /* Max width for large screens */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 20px; /* Increased spacing */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+  padding: 5px 10px; /* Better touch target size */
+}
+
+nav ul li a:hover {
+  color: #ddd;
+  transform: scale(1.1); /* Slight scale up effect */
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+  max-width: 1200px; /* Consistency in max width */
+}
+
+.card {
+  background: #222;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Enhanced shadow on hover */
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; 
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center; /* Centered container text */
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center aligned social media links */
+  padding: 0;
+}
+
+.social-media a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: rgb(254, 255, 254); /* Sam's Support brand color */
+  font-weight: bold; /* Make text more visible */
+  font-size: 1.2em; /* Larger font size for better visibility */
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: white; /* Color change on hover */
+}
+
+.services {
+  max-width: 600px;
+  margin: auto;
+  text-align: center; /* Centered container text */
+}
+
+#service li {
+  list-style-type: none;
+}
