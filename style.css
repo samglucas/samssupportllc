@@ -1,99 +1,124 @@
+/* Main body styles */
 body {
     font-family: 'Arial', sans-serif;
     color: white;
-    background: linear-gradient(to bottom, #000000, #004d00); /* gradient from black at the top to dark green at the bottom */
+    background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
+    background-attachment: fixed; /* Ensures the gradient is fixed during scroll */
+    background-size: cover; /* Ensures the gradient covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the gradient from repeating */
     margin: 0;
     padding: 0;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* make sure body takes at least the full viewport height */
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: green;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .header-content {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1200px; /* Max width for large screens */
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
+/* Navigation styles */
 nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-  margin: 0 20px; /* Increased spacing */
+    margin: 0 20px;
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s, transform 0.3s; /* Standard syntax */
-  -webkit-transition: color 0.3s, -webkit-transform 0.3s; /* For older WebKit browsers */
-  padding: 5px 10px; /* Better touch target size */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
-  color: #ddd;
-  transform: scale(1.1); /* Slight scale up effect */
+    color: #ddd;
+    transform: scale(1.1);
 }
 
+/* Main content styles */
 main {
-  width: 80%;
-  margin: 20px auto;
-  max-width: 1200px; /* Consistency in max width */
+    width: 80%;
+    margin: 20px auto;
+    max-width: 1200px;
+    flex: 1;
 }
 
+/* Card styles */
 .card {
-  background: #222;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  transition: box-shadow 0.3s; /* Smooth shadow transition */
+    background: #222;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Enhanced shadow on hover */
-  width: 100%; /* Make card width flexible */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
 
+/* Container styles */
 .container {
-  max-width: 600px;
-  margin: auto;
-  text-align: center; /* Centered container text */
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
 }
 
+/* Social media link styles */
 .social-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center aligned social media links */
-  padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
 }
 
 .social-media a {
-  margin: 10px 0;
-  text-decoration: none;
-  color: rgb(254, 255, 254); /* Sam's Support brand color */
-  font-weight: bold; /* Make text more visible */
-  font-size: 1.2em; /* Larger font size for better visibility */
-  transition: color 0.3s ease;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
 .social-media a:hover {
-  color: white; /* Color change on hover */
+    color: #ddd;
 }
 
+/* Services styles */
 .services {
-  max-width: 600px;
-  margin: auto;
-  text-align: center; /* Centered container text */
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
 }
 
-/* Tablets and smaller devices */
+/* Footer styles */
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive design for tablets and smaller devices */
 @media (max-width: 768px) {
     .header-content, main, .container, .services {
         width: 95%;
@@ -109,21 +134,23 @@ main {
     }
 }
 
-/* Mobile phones */
+/* Responsive design for mobile phones */
 @media (max-width: 480px) {
     nav ul li a {
         font-size: 1em;
     }
 
     footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
+/* Image responsiveness */
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
