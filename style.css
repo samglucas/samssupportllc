@@ -61,6 +61,9 @@ main {
 
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Enhanced shadow on hover */
+  width: 100%; /* Make card width flexible */
+}
+
 }
 
 footer {
@@ -101,4 +104,32 @@ footer {
   max-width: 600px;
   margin: auto;
   text-align: center; /* Centered container text */
+}
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+    .header-content, main, .container, .services {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 1em;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
