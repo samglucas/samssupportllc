@@ -110,7 +110,3 @@ footer {
 @media screen and (max-width: 480px) {
     /* CSS rules for screens smaller than or equal to 480px */
 }
-
-#service li {
-  list-style-type: none;
-}
