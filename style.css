@@ -132,3 +132,14 @@ footer {
 }
 
 /* Responsive design for tablets and smaller devices */
+
+@media only screen and (max-width: 768px) {
+  /* Add styles for tablets and smaller devices here /
+  body {
+    / Example: Adjusting font size or padding /
+  }
+
+  main {
+    / Example: Adjusting width or margins */
+  }
+} 
