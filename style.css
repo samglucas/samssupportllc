@@ -29,7 +29,7 @@ img {
 
 /* Header styles */
 header {
-  background-color: green;
+  background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
   color: white;
   padding: 20px 0;
   text-align: center;
