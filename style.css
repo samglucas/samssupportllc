@@ -1,9 +1,7 @@
-/* Main body styles */
 body {
     font-family: 'Arial', sans-serif;
     color: white;
     background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
-    background-attachment: fixed; /* Ensures the gradient is fixed during scroll */
     background-size: cover; /* Ensures the gradient covers the entire viewport */
     background-repeat: no-repeat; /* Prevents the gradient from repeating */
     margin: 0;
@@ -13,6 +11,23 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+/* Image responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Apply a fallback for iOS */
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        body {
+            background-attachment: scroll;
+        }
+    }
+}
+
 
 /* Header styles */
 header {
@@ -146,11 +161,4 @@ footer {
         align-items: center;
         justify-content: center;
     }
-}
-
-/* Image responsiveness */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
