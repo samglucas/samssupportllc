@@ -125,7 +125,7 @@ main {
 
 /* Footer styles */
 footer {
-  background-color: green;
+  background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
   color: white;
   text-align: center;
   padding: 20px 0;
