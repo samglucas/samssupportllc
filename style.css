@@ -1,11 +1,13 @@
-body, header {
-  background: linear-gradient(to right, black, green); /* Standard syntax */
-  background: -webkit-linear-gradient(to right, black, green); /* For older WebKit browsers */
-  color: white;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6; /* Improved line spacing */
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: linear-gradient(to bottom, #000000, #004d00); /* gradient from black at the top to dark green at the bottom */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* make sure body takes at least the full viewport height */
 }
 
 .header-content {
