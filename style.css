@@ -1,15 +1,14 @@
 body {
   font-family: 'Arial', sans-serif;
   color: white;
-  background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
-  background-size: cover; /* Ensures the gradient covers the entire viewport */
-  background-repeat: no-repeat; /* Prevents the gradient from repeating */
+  background: #006400; /* DarkGreen color, it's a deep green that is not too bright */
   margin: 0;
   padding: 0;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  /* ... */
 }
 
 /* Image responsiveness */
