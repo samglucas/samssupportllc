@@ -1,164 +1,135 @@
 body {
-    font-family: 'Arial', sans-serif;
-    color: white;
-    background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
-    background-size: cover; /* Ensures the gradient covers the entire viewport */
-    background-repeat: no-repeat; /* Prevents the gradient from repeating */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
+  background-size: cover; /* Ensures the gradient covers the entire viewport */
+  background-repeat: no-repeat; /* Prevents the gradient from repeating */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Image responsiveness */
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Apply a fallback for iOS */
-@media not all and (min-resolution:.001dpcm) { 
-    @supports (-webkit-appearance:none) {
-        body {
-            background-attachment: scroll;
-        }
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    body {
+      background-attachment: scroll;
     }
+  }
 }
-
 
 /* Header styles */
 header {
-    background-color: green;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  background-color: green;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .header-content {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 /* Navigation styles */
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-    padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  padding: 5px 10px;
 }
 
 nav ul li a:hover {
-    color: #ddd;
-    transform: scale(1.1);
+  color: #ddd;
+  transform: scale(1.1);
 }
 
 /* Main content styles */
 main {
-    width: 80%;
-    margin: 20px auto;
-    max-width: 1200px;
-    flex: 1;
+  width: 80%;
+  margin: 20px auto;
+  max-width: 1200px;
+  flex: 1;
 }
 
 /* Card styles */
 .card {
-    background: #222;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    transition: box-shadow 0.3s;
+  background: #222;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.3s;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
 
 /* Container styles */
 .container {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
 }
 
 /* Social media link styles */
 .social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
 }
 
 .social-media a {
-    margin: 10px 0;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
 }
 
 .social-media a:hover {
-    color: #ddd;
+  color: #ddd;
 }
 
 /* Services styles */
 .services {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
 }
 
 /* Footer styles */
 footer {
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* Responsive design for tablets and smaller devices */
-@media (max-width: 768px) {
-    .header-content, main, .container, .services {
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-/* Responsive design for mobile phones */
-@media (max-width: 480px) {
-    nav ul li a {
-        font-size: 1em;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
