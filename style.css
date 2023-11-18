@@ -1,17 +1,11 @@
-body {
-  font-family: 'Arial', sans-serif;
+body, header {
+  background: linear-gradient(to right, black, green); /* Standard syntax */
+  background: -webkit-linear-gradient(to right, black, green); /* For older WebKit browsers */
   color: white;
-  background: linear-gradient(to right, black, green); /* Gradient from black to green */
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6; /* Improved line spacing */
-}
-
-header {
-  background: linear-gradient(to right, black, green); /* Gradient from black to green */
-  color: white;
-  padding: 20px 0;
-  text-align: center;
 }
 
 .header-content {
@@ -35,7 +29,8 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+  transition: color 0.3s, transform 0.3s; /* Standard syntax */
+  -webkit-transition: color 0.3s, -webkit-transform 0.3s; /* For older WebKit browsers */
   padding: 5px 10px; /* Better touch target size */
 }
 
