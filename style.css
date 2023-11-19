@@ -135,11 +135,6 @@ h2, h3 {
     max-width: 600px; /* Adjust as needed */
 }
 
-/* Optional: Styles for paragraphs if you want them centered */
-.service p {
-    text-align: center;
-}
-
 /* Footer styles */
 footer {
   background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
