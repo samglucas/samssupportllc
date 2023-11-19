@@ -116,11 +116,28 @@ main {
   color: #ddd;
 }
 
-/* Services styles */
-.services {
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
+/* General styles for sections */
+section {
+    text-align: center;
+}
+
+/* Styles for headings */
+h2, h3 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Styles for service descriptions */
+.service {
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left; /* Keeps the text within service divs left-aligned */
+    max-width: 600px; /* Adjust as needed */
+}
+
+/* Optional: Styles for paragraphs if you want them centered */
+.service p {
+    text-align: center;
 }
 
 /* Footer styles */
