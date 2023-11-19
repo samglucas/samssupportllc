@@ -37,8 +37,9 @@ nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /* Distribute items evenly */
   align-items: center;
+  flex-direction: row; /* Override to display nav items in a row */
 }
 
 nav ul li {
