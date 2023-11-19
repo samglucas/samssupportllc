@@ -135,6 +135,38 @@ h2, h3 {
     max-width: 600px; /* Adjust as needed */
 }
 
+/* Section Styles */
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h3 {
+    color: #007bff;
+    margin-top: 20px;
+}
+
+/* Description and Price Styling */
+p {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-left: 3px solid #007bff;
+    margin: 10px 0;
+}
+
 /* Footer styles */
 footer {
   background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
