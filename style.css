@@ -1,3 +1,4 @@
+/* Main body styles */
 body {
   font-family: 'Arial', sans-serif;
   color: white;
@@ -8,7 +9,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Minimum height to fill the viewport */
-  background-attachment: scroll; /* Ensures the gradient scrolls with the content */
 }
 
 /* Image responsiveness */
@@ -18,18 +18,9 @@ img {
   display: block;
 }
 
-/* Apply a fallback for iOS */
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) {
-    body {
-      background-attachment: scroll;
-    }
-  }
-}
-
 /* Header styles */
 header {
-  background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
+  background-color: transparent; /* Keep the gradient background */
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -76,7 +67,7 @@ main {
 
 /* Card styles */
 .card {
-  background: #222;
+  background-color: #222;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 8px;
@@ -116,88 +107,54 @@ main {
   color: #ddd;
 }
 
-/* General styles for sections */
-section {
-    text-align: center;
-}
-
-/* Styles for headings */
-h2, h3 {
-    text-align: center;
-    margin: 0 auto;
-}
-
-/* Styles for service descriptions */
-.service {
-    margin: 0 auto;
-    display: inline-block;
-    text-align: left; /* Keeps the text within service divs left-aligned */
-    max-width: 600px; /* Adjust as needed */
-}
-
 /* Section Styles */
 section {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for contrast */
-}
-
-/* Section Styles */
-section {
-    background-color: transparent; /* Keep the gradient background */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: transparent; /* Keep the gradient background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 /* Headings */
-h2 {
-    background-color: transparent; /* Keep the gradient background */
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-h3 {
-    color: white; /* White for contrast against gradient */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
-    margin-top: 20px;
+h2, h3 {
+  background-color: transparent; /* Keep the gradient background */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 /* Description and Price Styling */
 p {
-    background-color: transparent; /* Keep the gradient background */
-    color: white; /* White color for contrast */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
-    padding: 10px;
-    border-left: 3px solid #006400; /* Dark green border for consistency */
-    margin: 10px 0;
+  background-color: transparent; /* Keep the gradient background */
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+  padding: 10px;
+  border-left: 3px solid #006400; /* Dark green border for consistency */
+  margin: 10px 0;
 }
 
 /* Footer styles */
 footer {
-  background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
+  background-color: transparent; /* Keep the gradient background */
   color: white;
   text-align: center;
   padding: 20px 0;
 }
 
 /* Responsive design for tablets and smaller devices */
-
 @media only screen and (max-width: 768px) {
-  /* Add styles for tablets and smaller devices here /
-  body {
-    / Example: Adjusting font size or padding /
+  /* Adjust styles for tablets and smaller devices */
+  .header-content, main, .container {
+    width: 95%;
+    margin: 0 auto;
   }
 
-  main {
-    / Example: Adjusting width or margins */
+  nav ul {
+    flex-direction: column;
   }
-} 
+}
