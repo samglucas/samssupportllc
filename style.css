@@ -142,12 +142,12 @@ section {
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for contrast */
 }
 
 /* Headings */
 h2 {
-    background-color: #007bff;
+    background-color: #007bff; /* Or any other color that matches your gradient */
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -155,7 +155,7 @@ h2 {
 }
 
 h3 {
-    color: #007bff;
+    color: #0056b3; /* A darker shade for better contrast on the gradient background */
     margin-top: 20px;
 }
 
