@@ -134,9 +134,13 @@ p {
   background-color: transparent; /* Keep the gradient background */
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
-  border-left: 3px solid #006400; /* Dark green border for consistency */
   padding: 10px;
   margin: 10px 0;
+}
+
+/* Apply border-left to paragraphs not inside the footer */
+body:not(footer) p {
+    border-left: 3px solid #006400; /* Dark green border for consistency */
 }
 
 /* Footer styles */
