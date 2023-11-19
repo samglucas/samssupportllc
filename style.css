@@ -145,25 +145,39 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for contrast */
 }
 
+/* Section Styles */
+section {
+    background-color: transparent; /* Keep the gradient background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 /* Headings */
 h2 {
-    background-color: #007bff; /* Or any other color that matches your gradient */
+    background-color: transparent; /* Keep the gradient background */
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
     padding: 10px;
     border-radius: 5px;
     text-align: center;
 }
 
 h3 {
-    color: #0056b3; /* A darker shade for better contrast on the gradient background */
+    color: white; /* White for contrast against gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
     margin-top: 20px;
 }
 
 /* Description and Price Styling */
 p {
-    background-color: #f8f9fa;
+    background-color: transparent; /* Keep the gradient background */
+    color: white; /* White color for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
     padding: 10px;
-    border-left: 3px solid #007bff;
+    border-left: 3px solid #007bff; /* Blue border for consistency */
     margin: 10px 0;
 }
 
