@@ -154,8 +154,3 @@ footer {
     width: 95%;
     margin: 0 auto;
   }
-
-  nav ul {
-    flex-direction: column;
-  }
-}
