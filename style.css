@@ -58,11 +58,14 @@ nav ul li a {
   transform: scale(0) translateY(50px);
   opacity: 0;
   transition: .5s; /* Smooth transition for hover effect */
+  
 }
 
 nav ul li a:hover {
   color: #ddd;
   transform: scale(1.1);
+  transform: scale(1) translateY(0);
+  opacity: 1; /* Make it fully visible on hover */
 }
 
 /* Main content styles */
