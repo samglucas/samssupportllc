@@ -45,6 +45,7 @@ nav ul {
 nav ul li {
   margin: 0 20px;
     border-radius: 15px; /* Rounded corners for each list item */
+    border-bottom: 2px solid #000000; /* Black bottom border */
 }
 
 nav ul li a {
