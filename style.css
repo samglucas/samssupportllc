@@ -44,6 +44,7 @@ nav ul {
 
 nav ul li {
   margin: 0 20px;
+    border-radius: 15px; /* Rounded corners for each list item */
 }
 
 nav ul li a {
@@ -51,7 +52,7 @@ nav ul li a {
   text-decoration: none;
   transition: color 0.3s, transform 0.3s;
   padding: 5px 10px;
-  border-radius: 15px; /* Rounded corners for links */
+  display: block; /* Make the anchor tag fill the li element */
 }
 
 nav ul li a:hover {
