@@ -91,27 +91,6 @@ main {
   text-align: center;
 }
 
-/* Social media link styles */
-.social-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-}
-
-.social-media a {
-  margin: 10px 0;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2em;
-  transition: color 0.3s ease;
-}
-
-.social-media a:hover {
-  color: #ddd;
-}
-
 /* Section Styles */
 section {
   background: linear-gradient(to bottom, #505050, #004d00); /* Gradient from black to dark green */
