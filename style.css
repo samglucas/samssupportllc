@@ -177,6 +177,7 @@ footer {
     width: 40px; /* Adjust based on your preference */
     height: auto; /* Maintains aspect ratio of the icons */
 }
+
 /* Responsive design for tablets and smaller devices */
 @media only screen and (max-width: 768px) {
   /* Adjust styles for tablets and smaller devices */
