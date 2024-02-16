@@ -168,9 +168,14 @@ footer {
     flex-wrap: wrap;
 }
 
+.social-media-links {
+    display: inline-flex; /* Keeps links closely together */
+    padding-left: 0; /* Removes padding for inline list */
+}
+
 .social-media-links a {
     color: #fff;
-    margin: 0 10px;
+    margin: 0 5px; /* Reduced margin for closer links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
