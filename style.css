@@ -20,7 +20,7 @@ img {
 
 /* Header styles */
 header {
-  background: linear-gradient(to bottom, #000000, #008000); /* Gradient from black to dark green */
+  background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -112,12 +112,6 @@ main {
   color: #ddd;
 }
 
-.fb-page {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 /* Section Styles */
 section {
   background: linear-gradient(to bottom, #808080, #004d00); /* Gradient from black to dark green */
@@ -151,7 +145,7 @@ p {
 
 /* Footer styles */
 footer {
-  background: linear-gradient(to bottom, #000000, #008000); /* Gradient from black to dark green */
+  background: linear-gradient(to bottom, #000000, #004d00); /* Gradient from black to dark green */
   color: white;
   text-align: center;
   padding: 20px 0;
