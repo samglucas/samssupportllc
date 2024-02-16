@@ -156,8 +156,27 @@ footer {
   text-align: center;
   padding: 20px 0;
 /* Ensure no border-left on footer paragraphs */
+  
   footer p {
       border-left: none;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ddd; /* Lighter shade on hover for interaction feedback */
 }
 
 /* Responsive design for tablets and smaller devices */
