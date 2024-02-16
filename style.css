@@ -93,7 +93,7 @@ main {
 
 /* Section Styles */
 section {
-  background: linear-gradient(to bottom, #505050, #004d00); /* Gradient from black to dark green */
+  background: linear-gradient(to bottom, #404040, #004d00); /* Gradient from black to dark green */
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
