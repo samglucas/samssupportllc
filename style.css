@@ -184,6 +184,22 @@ footer {
     color: #ddd; /* Lighter shade on hover for interaction feedback */
 }
 
+.social-media-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 20px; /* Adjust the space between icons */
+}
+
+.social-media-icons a {
+    display: inline-flex; /* Display links inline and allow flex properties */
+    align-items: center; /* Align icons vertically */
+}
+
+.social-media-icons img {
+    width: 40px; /* Adjust based on desired size */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Responsive design for tablets and smaller devices */
 @media only screen and (max-width: 768px) {
   /* Adjust styles for tablets and smaller devices */
