@@ -185,21 +185,20 @@ footer {
 }
 
 .social-media-icons {
-    display: flex;
-    justify-content: center; /* Center the icons horizontally */
-    gap: 20px; /* Adjust the space between icons */
+    display: flex; /* Activates flexbox layout, arranging children in a row */
+    justify-content: center; /* Center the icons horizontally within the container */
+    align-items: center; /* Align the icons vertically in the middle */
 }
 
 .social-media-icons a {
-    display: inline-flex; /* Display links inline and allow flex properties */
-    align-items: center; /* Align icons vertically */
+    margin: 0 10px; /* Adds horizontal space between icons */
+    display: block; /* Ensures the anchor tags behave as block-level elements within the flex container */
 }
 
 .social-media-icons img {
-    width: 40px; /* Adjust based on desired size */
-    height: auto; /* Maintain aspect ratio */
+    width: 40px; /* Adjust based on your preference */
+    height: auto; /* Maintains aspect ratio of the icons */
 }
-
 /* Responsive design for tablets and smaller devices */
 @media only screen and (max-width: 768px) {
   /* Adjust styles for tablets and smaller devices */
